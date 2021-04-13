@@ -1,6 +1,3 @@
-# TODO: Write documentation for `Mtg`
-module Mtg
-  VERSION = "0.1.0"
+module Mtg; end
 
-  # TODO: Put your code here
-end
+require "./mtg/*"

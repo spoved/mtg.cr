@@ -1,34 +1,34 @@
 module Mtg::Card
   enum FrameEffects
-    Colorshifted
+    ColorShifted
     Companion
-    Compasslanddfc
+    CompassLandDFC
     Devoid
     Draft
     Etched
-    Extendedart
-    Fullart
+    ExtendedArt
+    FullArt
     Inverted
     Legendary
     Miracle
-    Mooneldrazidfc
-    Nyxborn
-    Nyxtouched
-    Originpwdfc
+    MoonEldraziDFC
+    NyxBorn
+    NyxTouched
+    OriginPwDFC
     Showcase
     Snow
-    Sunmoondfc
+    SunMoonDFC
     Tombstone
-    Waxingandwaningmoondfc
+    WaxingAndWaningMoonDFC
 
     def self.from_s(value : String) : FrameEffects
       case value
       when "colorshifted"
-        FrameEffects::Colorshifted
+        FrameEffects::ColorShifted
       when "companion"
         FrameEffects::Companion
       when "compasslanddfc"
-        FrameEffects::Compasslanddfc
+        FrameEffects::CompassLandDFC
       when "devoid"
         FrameEffects::Devoid
       when "draft"
@@ -36,9 +36,9 @@ module Mtg::Card
       when "etched"
         FrameEffects::Etched
       when "extendedart"
-        FrameEffects::Extendedart
+        FrameEffects::ExtendedArt
       when "fullart"
-        FrameEffects::Fullart
+        FrameEffects::FullArt
       when "inverted"
         FrameEffects::Inverted
       when "legendary"
@@ -46,23 +46,23 @@ module Mtg::Card
       when "miracle"
         FrameEffects::Miracle
       when "mooneldrazidfc"
-        FrameEffects::Mooneldrazidfc
+        FrameEffects::MoonEldraziDFC
       when "nyxborn"
-        FrameEffects::Nyxborn
+        FrameEffects::NyxBorn
       when "nyxtouched"
-        FrameEffects::Nyxtouched
+        FrameEffects::NyxTouched
       when "originpwdfc"
-        FrameEffects::Originpwdfc
+        FrameEffects::OriginPwDFC
       when "showcase"
         FrameEffects::Showcase
       when "snow"
         FrameEffects::Snow
       when "sunmoondfc"
-        FrameEffects::Sunmoondfc
+        FrameEffects::SunMoonDFC
       when "tombstone"
         FrameEffects::Tombstone
       when "waxingandwaningmoondfc"
-        FrameEffects::Waxingandwaningmoondfc
+        FrameEffects::WaxingAndWaningMoonDFC
       else
         raise "Unknown FrameEffects: #{value}"
       end

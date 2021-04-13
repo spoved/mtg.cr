@@ -15,30 +15,34 @@ def make_enum(path, data)
 end
 
 def make_enum_file(path, enun, values)
+  return if enun == "foreignData"
+
   file_path = File.join(SRC_PATH, path.underscore)
   file_name = File.join(file_path, "#{enun.underscore}.cr")
   FileUtils.mkdir_p(file_path)
-  File.open(file_name, "w") do |file|
-    file.puts "module Mtg::#{path.camelcase}"
+  vs = values.map(&.as_s.klassify)
+  if vs.find &.=~(/[^A-Za-z_]/)
+    File.open(file_name, "w") do |file|
+      file.puts "module Mtg::#{path.camelcase}"
 
-    vs = values.map(&.as_s.klassify)
-    if vs.find &.=~(/[^A-Za-z_]/)
       Log.error { "cant transform values for #{path} - #{enun}. making a list instead" }
       # Just make a list then
       list = values.map(&.as_s).join("\",\n\"")
-      file.puts "#{enun.underscore.upcase} = [\n\"#{list}\"\n]"
-    else
-      file.puts "enum #{enun.camelcase}"
+      var_name = enun.underscore.upcase
+      var_name = var_name + "S" unless /S$/ === var_name
+      file.puts "#{var_name} = [\n\"#{list}\"\n]"
 
-      values.each do |val|
-        name = val.as_s.klassify
-        file.puts name
-      end
-
-      make_from_s(values, file, enun.camelcase)
       file.puts "end"
     end
-    file.puts "end"
+  else
+    # file.puts "enum #{enun.camelcase}"
+    # values.each do |val|
+    #   name = val.as_s.klassify
+    #   file.puts name
+    # end
+
+    # make_from_s(values, file, enun.camelcase)
+    # file.puts "end"
   end
 end
 

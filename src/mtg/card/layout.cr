@@ -2,14 +2,14 @@ module Mtg::Card
   enum Layout
     Adventure
     Aftermath
-    Art_series
+    ArtSeries
     Augment
     Emblem
     Flip
     Host
     Leveler
     Meld
-    Modal_dfc
+    ModalDFC
     Normal
     Planar
     Saga
@@ -26,7 +26,7 @@ module Mtg::Card
       when "aftermath"
         Layout::Aftermath
       when "art_series"
-        Layout::Art_series
+        Layout::ArtSeries
       when "augment"
         Layout::Augment
       when "emblem"
@@ -40,7 +40,7 @@ module Mtg::Card
       when "meld"
         Layout::Meld
       when "modal_dfc"
-        Layout::Modal_dfc
+        Layout::ModalDFC
       when "normal"
         Layout::Normal
       when "planar"

@@ -1,5 +1,5 @@
 module Mtg::Card
-  WATERMARK = [
+  WATERMARKS = [
     "abzan",
     "agentsofsneak",
     "arena",

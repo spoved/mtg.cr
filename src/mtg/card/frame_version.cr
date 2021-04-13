@@ -1,5 +1,5 @@
 module Mtg::Card
-  FRAME_VERSION = [
+  FRAME_VERSIONS = [
     "1993",
     "1997",
     "2003",

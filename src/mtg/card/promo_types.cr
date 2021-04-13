@@ -1,66 +1,66 @@
 module Mtg::Card
   enum PromoTypes
-    Arenaleague
-    Boosterfun
-    Boxtopper
-    Brawldeck
+    ArenaLeague
+    BoosterFun
+    BoxTopper
+    BrawlDeck
     Bundle
-    Buyabox
+    BuyABox
     Convention
-    Datestamped
-    Draftweekend
+    DateStamped
+    DraftWeekend
     Duels
     Event
-    Fnm
+    FNM
     Gameday
     Gateway
     Giftbox
-    Godzillaseries
-    Instore
-    Intropack
-    Jpwalker
-    Judgegift
+    GodzillaSeries
+    InStore
+    IntroPack
+    JpWalker
+    JudgeGift
     League
-    Mediainsert
-    Openhouse
-    Planeswalkerstamped
-    Playerrewards
-    Premiereshop
-    Prerelease
-    Promopack
-    Promostamped
+    MediaInsert
+    OpenHouse
+    PlaneswalkerStamped
+    PlayerRewards
+    PremiereShop
+    PreRelease
+    PromoPack
+    PromoStamped
     Release
-    Setpromo
-    Themepack
+    SetPromo
+    ThemePack
     Tourney
-    Wizardsplaynetwork
+    WizardsPlayNetwork
 
     def self.from_s(value : String) : PromoTypes
       case value
       when "arenaleague"
-        PromoTypes::Arenaleague
+        PromoTypes::ArenaLeague
       when "boosterfun"
-        PromoTypes::Boosterfun
+        PromoTypes::BoosterFun
       when "boxtopper"
-        PromoTypes::Boxtopper
+        PromoTypes::BoxTopper
       when "brawldeck"
-        PromoTypes::Brawldeck
+        PromoTypes::BrawlDeck
       when "bundle"
         PromoTypes::Bundle
       when "buyabox"
-        PromoTypes::Buyabox
+        PromoTypes::BuyABox
       when "convention"
         PromoTypes::Convention
       when "datestamped"
-        PromoTypes::Datestamped
+        PromoTypes::DateStamped
       when "draftweekend"
-        PromoTypes::Draftweekend
+        PromoTypes::DraftWeekend
       when "duels"
         PromoTypes::Duels
       when "event"
         PromoTypes::Event
       when "fnm"
-        PromoTypes::Fnm
+        PromoTypes::FNM
       when "gameday"
         PromoTypes::Gameday
       when "gateway"
@@ -68,43 +68,43 @@ module Mtg::Card
       when "giftbox"
         PromoTypes::Giftbox
       when "godzillaseries"
-        PromoTypes::Godzillaseries
+        PromoTypes::GodzillaSeries
       when "instore"
-        PromoTypes::Instore
+        PromoTypes::InStore
       when "intropack"
-        PromoTypes::Intropack
+        PromoTypes::IntroPack
       when "jpwalker"
-        PromoTypes::Jpwalker
+        PromoTypes::JpWalker
       when "judgegift"
-        PromoTypes::Judgegift
+        PromoTypes::JudgeGift
       when "league"
         PromoTypes::League
       when "mediainsert"
-        PromoTypes::Mediainsert
+        PromoTypes::MediaInsert
       when "openhouse"
         PromoTypes::Openhouse
       when "planeswalkerstamped"
-        PromoTypes::Planeswalkerstamped
+        PromoTypes::PlaneswalkerStamped
       when "playerrewards"
-        PromoTypes::Playerrewards
+        PromoTypes::PlayerRewards
       when "premiereshop"
-        PromoTypes::Premiereshop
+        PromoTypes::PremiereShop
       when "prerelease"
-        PromoTypes::Prerelease
+        PromoTypes::PreRelease
       when "promopack"
-        PromoTypes::Promopack
+        PromoTypes::PromoPack
       when "promostamped"
-        PromoTypes::Promostamped
+        PromoTypes::PromoStamped
       when "release"
         PromoTypes::Release
       when "setpromo"
-        PromoTypes::Setpromo
+        PromoTypes::SetPromo
       when "themepack"
-        PromoTypes::Themepack
+        PromoTypes::ThemePack
       when "tourney"
         PromoTypes::Tourney
       when "wizardsplaynetwork"
-        PromoTypes::Wizardsplaynetwork
+        PromoTypes::WizardsPlayNetwork
       else
         raise "Unknown PromoTypes: #{value}"
       end

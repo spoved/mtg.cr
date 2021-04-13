@@ -1,5 +1,5 @@
 module Mtg::Deck
-  TYPE = [
+  TYPES = [
     "Advanced Deck",
     "Advanced Pack",
     "Archenemy Deck",

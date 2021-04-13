@@ -9,17 +9,17 @@ module Mtg::Card
 
     def self.from_s(value : String) : Rarity
       case value
-      when "bonus"
+      when "bonus", "b"
         Rarity::Bonus
-      when "common"
+      when "common", "c"
         Rarity::Common
-      when "mythic"
+      when "mythic", "m", /mythic/i
         Rarity::Mythic
-      when "rare"
+      when "rare", "r"
         Rarity::Rare
-      when "special"
+      when "special", "s"
         Rarity::Special
-      when "uncommon"
+      when "uncommon", "u"
         Rarity::Uncommon
       else
         raise "Unknown Rarity: #{value}"

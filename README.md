@@ -1,18 +1,18 @@
-# mtg
+# Mtg
 
 Crystal library for Magic The Gathering structs/libs
 
 ## Installation
 
-1. Add the dependency to your `shard.yml`:
+Add the dependency to your `shard.yml`:
 
-   ```yaml
-   dependencies:
-     mtg:
-       github: spoved/mtg.cr
-   ```
+```yaml
+dependencies:
+  mtg:
+    github: spoved/mtg.cr
+```
 
-2. Run `shards install`
+Run `shards install`
 
 ## Usage
 

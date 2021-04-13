@@ -1,3 +1,3 @@
 module Mtg; end
 
-require "./mtg/*"
+require "./mtg/**"

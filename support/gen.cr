@@ -40,7 +40,6 @@ def make_enum_file(path, enun, values)
     #   name = val.as_s.klassify
     #   file.puts name
     # end
-
     # make_from_s(values, file, enun.camelcase)
     # file.puts "end"
   end

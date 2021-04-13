@@ -7,6 +7,10 @@ module Mtg::Card
     Green
     Colorless
 
+    def self.from_s(value : String) : Color
+      self.new(value)
+    end
+
     def self.new(color : String) : Color
       case color.downcase
       when "white", "w"

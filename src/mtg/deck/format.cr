@@ -18,6 +18,10 @@ module Mtg::Deck
     Oldschool
     Premodern
 
+    def self.from_s(value : String) : Format
+      self.new(value)
+    end
+
     def self.new(val : String) : Format
       case val
       when "none"

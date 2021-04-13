@@ -18,6 +18,10 @@ module Mtg::ForeignData
     Sanskrit
     Phyrexian
 
+    def self.from_s(value : String) : Language
+      self.new(value)
+    end
+
     def self.new(lang : String) : Language
       case lang.downcase
       when "en", /English/i

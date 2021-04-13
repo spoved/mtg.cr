@@ -7,6 +7,10 @@ module Mtg::Card
     HeavilyPlayed
     Poor
 
+    def self.from_s(value : String) : Condition
+      self.new(value)
+    end
+
     def self.new(condition : String) : Condition
       case condition.downcase
       when "mint"

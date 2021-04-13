@@ -4,21 +4,21 @@ module Mtg::Set
     Box
     Commander
     Core
-    Draft_innovation
-    Duel_deck
+    DraftInnovation
+    DuelDeck
     Expansion
-    From_the_vault
+    FromTheVault
     Funny
     Masterpiece
     Masters
     Memorabilia
     Planechase
-    Premium_deck
+    PremiumDeck
     Promo
     Spellbook
     Starter
     Token
-    Treasure_chest
+    TreasureChest
     Vanguard
 
     def self.from_s(value : String) : Type
@@ -32,13 +32,13 @@ module Mtg::Set
       when "core"
         Type::Core
       when "draft_innovation"
-        Type::Draft_innovation
+        Type::DraftInnovation
       when "duel_deck"
-        Type::Duel_deck
+        Type::DuelDeck
       when "expansion"
         Type::Expansion
       when "from_the_vault"
-        Type::From_the_vault
+        Type::FromTheVault
       when "funny"
         Type::Funny
       when "masterpiece"
@@ -50,7 +50,7 @@ module Mtg::Set
       when "planechase"
         Type::Planechase
       when "premium_deck"
-        Type::Premium_deck
+        Type::PremiumDeck
       when "promo"
         Type::Promo
       when "spellbook"
@@ -60,7 +60,7 @@ module Mtg::Set
       when "token"
         Type::Token
       when "treasure_chest"
-        Type::Treasure_chest
+        Type::TreasureChest
       when "vanguard"
         Type::Vanguard
       else

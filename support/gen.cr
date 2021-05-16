@@ -1,6 +1,6 @@
 require "./pull"
 require "file_utils"
-require "spoved/ext"
+require "spoved/ext/string"
 
 SRC_PATH = File.expand_path("./src/mtg")
 

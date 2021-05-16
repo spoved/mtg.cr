@@ -15,13 +15,13 @@ module Mtg::Card
       case condition.downcase
       when "mint"
         Mint
-      when "near mint"
+      when /near\s?mint/i
         NearMint
-      when "lightly played", /Lightly Played/i
+      when /Lightly\s?Played/i
         LightlyPlayed
       when "played"
         Played
-      when "heavily played"
+      when /heavily\s?played/i
         HeavilyPlayed
       when "poor"
         Poor

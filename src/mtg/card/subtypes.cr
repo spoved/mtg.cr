@@ -159,6 +159,7 @@ module Mtg::Card
     "Griffin",
     "Gus",
     "Hag",
+    "Halfling",
     "Harpy",
     "Hatificer",
     "Head",

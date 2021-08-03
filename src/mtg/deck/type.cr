@@ -40,15 +40,15 @@ module Mtg::Deck
 
     def self.new(val : String) : Type
       case val
-      when "none"
+      when /none/i
         None
-      when "constructed"
+      when /constructed/i
         Constructed
-      when "draft"
+      when /draft/i
         Draft
-      when "sealed"
+      when /sealed/i
         Sealed
-      when "cube"
+      when /cube/i
         Cube
       else
         raise "Unknown Type: #{val}"

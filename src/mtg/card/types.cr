@@ -1,12 +1,11 @@
 module Mtg::Card
   TYPES = [
     "Artifact",
-    "Autobot",
     "Card",
-    "Character",
     "Conspiracy",
     "Creature",
     "Dragon",
+    "Dungeon",
     "Eaturecray",
     "Elemental",
     "Elite",

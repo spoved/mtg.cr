@@ -110,7 +110,6 @@ module Mtg::Keywords
     "Crew",
     "Aftermath",
     "Afflict",
-    "Equip",
     "Flanking",
     "Echo",
     "Fading",
@@ -168,5 +167,6 @@ module Mtg::Keywords
     "Buyback",
     "Ward",
     "Demonstrate",
+    "Equip",
   ]
 end

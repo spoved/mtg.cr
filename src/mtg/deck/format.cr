@@ -24,39 +24,39 @@ module Mtg::Deck
 
     def self.new(val : String) : Format
       case val
-      when "none"
+      when /none/i
         None
-      when "casual"
+      when /casual/i
         Casual
-      when "standard"
+      when /standard/i
         Standard
-      when "future"
+      when /future/i
         Future
-      when "historic"
+      when /historic/i
         Historic
-      when "gladiator"
+      when /gladiator/i
         Gladiator
-      when "pioneer"
+      when /pioneer/i
         Pioneer
-      when "modern"
+      when /modern/i
         Modern
-      when "legacy"
+      when /legacy/i
         Legacy
-      when "pauper"
+      when /pauper/i
         Pauper
-      when "vintage"
+      when /vintage/i
         Vintage
-      when "penny"
+      when /penny/i
         Penny
-      when "commander"
+      when /commander/i
         Commander
-      when "brawl"
+      when /brawl/i
         Brawl
-      when "duel"
+      when /duel/i
         Duel
-      when "oldschool"
+      when /oldschool/i
         Oldschool
-      when "premodern"
+      when /premodern/i
         Premodern
       else
         raise "Unknown Format: #{val}"

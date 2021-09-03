@@ -22,6 +22,10 @@ module Mtg::ForeignData
       self.new(value)
     end
 
+    def self.parse(lang : String)
+      new(lang)
+    end
+
     def self.new(lang : String) : Language
       case lang.downcase
       when "en", /English/i

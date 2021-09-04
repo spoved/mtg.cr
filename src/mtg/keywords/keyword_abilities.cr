@@ -168,5 +168,9 @@ module Mtg::Keywords
     "Ward",
     "Demonstrate",
     "Equip",
+    "Daybound",
+    "Nightbound",
+    "Decayed",
+    "Disturb",
   ]
 end

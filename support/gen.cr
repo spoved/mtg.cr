@@ -15,7 +15,7 @@ def make_enum(path, data)
 end
 
 def make_enum_file(path, enun, values)
-  return if enun == "foreignData"
+  return if enun == "language"
 
   file_path = File.join(SRC_PATH, path.underscore)
   file_name = File.join(file_path, "#{enun.underscore}.cr")

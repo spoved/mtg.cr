@@ -1,4 +1,27 @@
 module Mtg::Card
+  FRAME_EFFECTS = [
+    "colorshifted",
+    "companion",
+    "compasslanddfc",
+    "devoid",
+    "draft",
+    "etched",
+    "extendedart",
+    "fullart",
+    "inverted",
+    "legendary",
+    "miracle",
+    "mooneldrazidfc",
+    "nyxborn",
+    "nyxtouched",
+    "originpwdfc",
+    "showcase",
+    "snow",
+    "sunmoondfc",
+    "tombstone",
+    "waxingandwaningmoondfc",
+  ]
+
   enum FrameEffects
     ColorShifted
     Companion

@@ -1,4 +1,24 @@
 module Mtg::Deck
+  FORMATS = %w(
+    none
+    casual
+    standard
+    future
+    historic
+    gladiator
+    pioneer
+    modern
+    legacy
+    pauper
+    vintage
+    penny
+    commander
+    brawl
+    duel
+    oldschool
+    premodern
+  )
+
   enum Format
     None
     Casual

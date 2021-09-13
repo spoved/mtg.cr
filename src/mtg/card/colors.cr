@@ -1,4 +1,6 @@
 module Mtg::Card
+  COLORS = %w(w u b r g c)
+
   enum Color
     White
     Blue

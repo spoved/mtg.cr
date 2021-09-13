@@ -1,4 +1,12 @@
 module Mtg::Card
+  SIDES = [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+  ]
+
   enum Side
     A
     B

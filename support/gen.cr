@@ -4,7 +4,7 @@ require "spoved/ext/string"
 
 SRC_PATH = File.expand_path("./src/mtg")
 ALIASES  = get_aliases
-SKIP     = %w(language colors)
+SKIP     = %w(language colors colorIdentity colorIndicator)
 
 def make_enum(path, data)
   data.each do |key, val|
@@ -14,7 +14,7 @@ end
 
 def make_enum_file(path, enun, values)
   return if SKIP.includes?(enun)
-
+  puts enun
   file_path = File.join(SRC_PATH, path.underscore)
   file_name = File.join(file_path, "#{enun.underscore}.cr")
   FileUtils.mkdir_p(file_path)
@@ -23,13 +23,11 @@ def make_enum_file(path, enun, values)
   File.open(file_name, "w") do |file|
     file.puts "module Mtg::#{path.camelcase}"
 
-    if vs.find &.=~(/[^A-Za-z_]/)
-      Log.error { "cant transform values for #{path} - #{enun}. making a list instead" }
-      # Just make a list then
-      make_list(enun, values, file)
-    else
-      make_list(enun, values, file) if enun == "supertypes"
-
+    # Log.error { "cant transform values for #{path} - #{enun}. making a list instead" }
+    # Just make a list then
+    make_list(enun, values, file)
+    file.puts ""
+    unless vs.find &.=~(/[^A-Za-z_]/)
       file.puts "  enum #{enun.camelcase}"
       values.map(&.as_s).sort!.each do |val|
         name = val.camelcase
@@ -39,9 +37,9 @@ def make_enum_file(path, enun, values)
           file.puts name
         end
       end
-      # make_from_s(values, file, enun.camelcase)
       file.puts "  end"
     end
+
     file.puts "end"
   end
 end

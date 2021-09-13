@@ -7,6 +7,7 @@ module Mtg::Card
     "snow",
     "world",
   ]
+
   enum Supertypes
     Basic
     Host

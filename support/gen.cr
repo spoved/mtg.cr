@@ -3,10 +3,8 @@ require "file_utils"
 require "spoved/ext/string"
 
 SRC_PATH = File.expand_path("./src/mtg")
-
-json = File.open(File.join(CACHE_DIR, "enum_values.json")) do |file|
-  JSON.parse(file)
-end
+ALIASES  = get_aliases
+SKIP     = %w(language colors)
 
 def make_enum(path, data)
   data.each do |key, val|
@@ -15,34 +13,44 @@ def make_enum(path, data)
 end
 
 def make_enum_file(path, enun, values)
-  return if enun == "language"
+  return if SKIP.includes?(enun)
 
   file_path = File.join(SRC_PATH, path.underscore)
   file_name = File.join(file_path, "#{enun.underscore}.cr")
   FileUtils.mkdir_p(file_path)
   vs = values.map(&.as_s.klassify)
-  if vs.find &.=~(/[^A-Za-z_]/)
-    File.open(file_name, "w") do |file|
-      file.puts "module Mtg::#{path.camelcase}"
 
+  File.open(file_name, "w") do |file|
+    file.puts "module Mtg::#{path.camelcase}"
+
+    if vs.find &.=~(/[^A-Za-z_]/)
       Log.error { "cant transform values for #{path} - #{enun}. making a list instead" }
       # Just make a list then
-      list = values.map(&.as_s).join("\",\n\"")
-      var_name = enun.underscore.upcase
-      var_name = var_name + "S" unless /S$/ === var_name
-      file.puts "#{var_name} = [\n\"#{list}\"\n]"
+      make_list(enun, values, file)
+    else
+      make_list(enun, values, file) if enun == "supertypes"
 
-      file.puts "end"
+      file.puts "  enum #{enun.camelcase}"
+      values.map(&.as_s).sort!.each do |val|
+        name = val.camelcase
+        if ALIASES[name]?
+          file.puts ALIASES[name]
+        else
+          file.puts name
+        end
+      end
+      # make_from_s(values, file, enun.camelcase)
+      file.puts "  end"
     end
-  else
-    # file.puts "enum #{enun.camelcase}"
-    # values.each do |val|
-    #   name = val.as_s.klassify
-    #   file.puts name
-    # end
-    # make_from_s(values, file, enun.camelcase)
-    # file.puts "end"
+    file.puts "end"
   end
+end
+
+def make_list(enun, values, file)
+  list = values.map(&.as_s.downcase).uniq!.sort!.join(%<",\n">)
+  var_name = enun.underscore.upcase
+  var_name = var_name + "S" unless /S$/ === var_name
+  file.puts %<#{var_name} = [\n"#{list}"\n]>
 end
 
 def make_from_s(values, file, enun)
@@ -63,8 +71,41 @@ def make_from_s(values, file, enun)
   file.puts "end"
 end
 
-json["data"].as_h.each do |key, val|
-  make_enum(key, val.as_h)
+def get_aliases
+  array = [] of NamedTuple(mode: String, name: String)
+  File.each_line("support/alias.list") do |line|
+    if line =~ /(\+|\-)\s*(.*)/
+      array << {mode: $1, name: $2}
+    end
+  end
+
+  names = array.map do |tuple|
+    tuple[:name].downcase
+  end.uniq!
+
+  aliases = names.map do |name|
+    items = array.select { |tuple| tuple[:name].downcase == name }
+    items
+  end.to_h do |items|
+    name = items.find { |tuple| tuple[:mode] == "+" }.try &.[:name]
+    alias_name = items.find { |tuple| tuple[:mode] == "-" }.try &.[:name]
+
+    {name, alias_name}
+  end
+  aliases
 end
 
-`crystal tool format`
+def run
+  json = File.open(File.join(CACHE_DIR, "enum_values.json")) do |file|
+    JSON.parse(file)
+  end
+
+  json["data"].as_h.each do |key, val|
+    make_enum(key, val.as_h)
+  end
+
+  `crystal tool format`
+end
+
+# create_aliases
+run

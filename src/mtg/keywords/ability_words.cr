@@ -2,6 +2,7 @@ module Mtg::Keywords
   ABILITY_WORDS = [
     "adamant",
     "addendum",
+    "alliance",
     "battalion",
     "bloodrush",
     "channel",

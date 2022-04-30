@@ -1,6 +1,8 @@
 module Mtg::Set
   TYPES = [
+    "alchemy",
     "archenemy",
+    "arsenal",
     "box",
     "commander",
     "core",
@@ -23,7 +25,9 @@ module Mtg::Set
   ]
 
   enum Type
+    Alchemy
     Archenemy
+    Arsenal
     Box
     Commander
     Core

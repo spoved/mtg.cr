@@ -8,6 +8,7 @@ module Mtg::Card
     "buyabox",
     "convention",
     "datestamped",
+    "draculaseries",
     "draftweekend",
     "duels",
     "event",
@@ -25,6 +26,7 @@ module Mtg::Card
     "openhouse",
     "planeswalkerstamped",
     "playerrewards",
+    "playpromo",
     "premiereshop",
     "prerelease",
     "promopack",
@@ -45,6 +47,7 @@ module Mtg::Card
     BuyABox
     Convention
     DateStamped
+    Draculaseries
     DraftWeekend
     Duels
     Event
@@ -62,6 +65,7 @@ module Mtg::Card
     OpenHouse
     PlaneswalkerStamped
     PlayerRewards
+    Playpromo
     PremiereShop
     PreRelease
     PromoPack

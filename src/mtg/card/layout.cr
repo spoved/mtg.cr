@@ -5,6 +5,7 @@ module Mtg::Card
     "art_series",
     "augment",
     "class",
+    "double_faced_token",
     "emblem",
     "flip",
     "host",
@@ -13,6 +14,7 @@ module Mtg::Card
     "modal_dfc",
     "normal",
     "planar",
+    "reversible_card",
     "saga",
     "scheme",
     "split",
@@ -27,6 +29,7 @@ module Mtg::Card
     ArtSeries
     Augment
     Class
+    DoubleFacedToken
     Emblem
     Flip
     Host
@@ -35,6 +38,7 @@ module Mtg::Card
     ModalDFC
     Normal
     Planar
+    ReversibleCard
     Saga
     Scheme
     Split

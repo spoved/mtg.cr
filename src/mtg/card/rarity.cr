@@ -1,11 +1,11 @@
 module Mtg::Card
   RARITYS = [
-    "common",
-    "uncommon",
-    "rare",
-    "mythic",
-    "special",
     "bonus",
+    "common",
+    "mythic",
+    "rare",
+    "special",
+    "uncommon",
   ]
 
   enum Rarity

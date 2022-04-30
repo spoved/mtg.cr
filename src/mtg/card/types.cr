@@ -25,7 +25,6 @@ module Mtg::Card
     "scheme",
     "see",
     "sorcery",
-    "specter",
     "summon",
     "token",
     "tribal",

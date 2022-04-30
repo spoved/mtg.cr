@@ -1,10 +1,17 @@
 module Mtg::Card
-  FINISHES = ["foil", "nonfoil", "etched", "glossy"]
+  FINISHES = [
+    "etched",
+    "foil",
+    "glossy",
+    "nonfoil",
+    "signed",
+  ]
 
-  enum Finish
-    Nonfoil
-    Foil
+  enum Finishes
     Etched
+    Foil
     Glossy
+    Nonfoil
+    Signed
   end
 end

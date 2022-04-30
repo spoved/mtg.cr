@@ -10,9 +10,9 @@ module Mtg::Card
     "fullart",
     "inverted",
     "legendary",
+    "lesson",
     "miracle",
     "mooneldrazidfc",
-    "nyxborn",
     "nyxtouched",
     "originpwdfc",
     "showcase",
@@ -33,9 +33,9 @@ module Mtg::Card
     FullArt
     Inverted
     Legendary
+    Lesson
     Miracle
     MoonEldraziDFC
-    NyxBorn
     NyxTouched
     OriginPwDFC
     Showcase

@@ -80,6 +80,7 @@ module Mtg::Keywords
     "foretell",
     "fortify",
     "frenzy",
+    "friends forever",
     "fuse",
     "graft",
     "gravestorm",

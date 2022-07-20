@@ -16,6 +16,7 @@ module Mtg::Card
     "gameday",
     "gateway",
     "giftbox",
+    "gilded",
     "godzillaseries",
     "instore",
     "intropack",
@@ -23,6 +24,7 @@ module Mtg::Card
     "judgegift",
     "league",
     "mediainsert",
+    "neonink",
     "openhouse",
     "planeswalkerstamped",
     "playerrewards",
@@ -33,7 +35,9 @@ module Mtg::Card
     "release",
     "setpromo",
     "stamped",
+    "textured",
     "themepack",
+    "thick",
     "tourney",
     "wizardsplaynetwork",
   ]
@@ -55,6 +59,7 @@ module Mtg::Card
     Gameday
     Gateway
     Giftbox
+    Gilded
     GodzillaSeries
     InStore
     IntroPack
@@ -62,6 +67,7 @@ module Mtg::Card
     JudgeGift
     League
     MediaInsert
+    Neonink
     OpenHouse
     PlaneswalkerStamped
     PlayerRewards
@@ -72,7 +78,9 @@ module Mtg::Card
     Release
     SetPromo
     Stamped
+    Textured
     ThemePack
+    Thick
     Tourney
     WizardsPlayNetwork
   end

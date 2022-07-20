@@ -18,6 +18,7 @@ module Mtg::Card
     "showcase",
     "snow",
     "sunmoondfc",
+    "textless",
     "tombstone",
     "waxingandwaningmoondfc",
   ]
@@ -41,6 +42,7 @@ module Mtg::Card
     Showcase
     Snow
     SunMoonDFC
+    Textless
     Tombstone
     WaxingAndWaningMoonDFC
   end

@@ -46,6 +46,7 @@ module Mtg::Keywords
     "tap",
     "transform",
     "untap",
+    "venture into the dungeon",
     "vote",
   ]
 end

@@ -11,6 +11,7 @@ module Mtg::Keywords
     "clash",
     "conjure",
     "connive",
+    "convert",
     "counter",
     "create",
     "destroy",

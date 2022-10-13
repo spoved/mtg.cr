@@ -17,6 +17,7 @@ module Mtg::Deck
     "intro pack",
     "jumpstart",
     "mtgo theme deck",
+    "pioneer challenger deck",
     "planechase deck",
     "planeswalker deck",
     "premium deck",

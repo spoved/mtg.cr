@@ -3,10 +3,12 @@ module Mtg::Card
     "colorshifted",
     "companion",
     "compasslanddfc",
+    "convertdfc",
     "devoid",
     "draft",
     "etched",
     "extendedart",
+    "fandfc",
     "fullart",
     "inverted",
     "legendary",
@@ -15,11 +17,13 @@ module Mtg::Card
     "mooneldrazidfc",
     "nyxtouched",
     "originpwdfc",
+    "shatteredglass",
     "showcase",
     "snow",
     "sunmoondfc",
     "textless",
     "tombstone",
+    "upsidedowndfc",
     "waxingandwaningmoondfc",
   ]
 
@@ -27,10 +31,12 @@ module Mtg::Card
     ColorShifted
     Companion
     CompassLandDFC
+    Convertdfc
     Devoid
     Draft
     Etched
     ExtendedArt
+    Fandfc
     FullArt
     Inverted
     Legendary
@@ -39,11 +45,13 @@ module Mtg::Card
     MoonEldraziDFC
     NyxTouched
     OriginPwDFC
+    Shatteredglass
     Showcase
     Snow
     SunMoonDFC
     Textless
     Tombstone
+    Upsidedowndfc
     WaxingAndWaningMoonDFC
   end
 end

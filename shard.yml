@@ -1,14 +1,14 @@
 name: mtg
-version: 0.2.5
+version: 0.2.6
 
 authors:
   - Holden Omans <holden.omans@gmail.com>
 
-crystal: 1.0.0
+crystal: ">= 1.0.0, < 2.0.0"
 
 license: MIT
 
 development_dependencies:
   spoved:
     github: spoved/spoved.cr
-    version: "~> 0.6.0"
+    version: ">= 0.6.0"

@@ -13,6 +13,7 @@ module Mtg::Card
     "duels",
     "event",
     "fnm",
+    "galaxyfoil",
     "gameday",
     "gateway",
     "giftbox",
@@ -33,8 +34,10 @@ module Mtg::Card
     "prerelease",
     "promopack",
     "release",
+    "schinesealtart",
     "setpromo",
     "stamped",
+    "surgefoil",
     "textured",
     "themepack",
     "thick",
@@ -56,6 +59,7 @@ module Mtg::Card
     Duels
     Event
     FNM
+    Galaxyfoil
     Gameday
     Gateway
     Giftbox
@@ -76,8 +80,10 @@ module Mtg::Card
     PreRelease
     PromoPack
     Release
+    Schinesealtart
     SetPromo
     Stamped
+    Surgefoil
     Textured
     ThemePack
     Thick

@@ -2,6 +2,7 @@ module Mtg::Card
   SECURITY_STAMPS = [
     "acorn",
     "arena",
+    "circle",
     "heart",
     "oval",
     "triangle",
@@ -10,6 +11,7 @@ module Mtg::Card
   enum SecurityStamp
     Acorn
     Arena
+    Circle
     Heart
     Oval
     Triangle

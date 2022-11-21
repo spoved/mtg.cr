@@ -4,6 +4,7 @@ module Mtg::Card
     "boosterfun",
     "boxtopper",
     "brawldeck",
+    "bringafriend",
     "bundle",
     "buyabox",
     "convention",
@@ -50,6 +51,7 @@ module Mtg::Card
     BoosterFun
     BoxTopper
     BrawlDeck
+    Bringafriend
     Bundle
     BuyABox
     Convention

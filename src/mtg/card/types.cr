@@ -3,6 +3,7 @@ module Mtg::Card
     "artifact",
     "card",
     "conspiracy",
+    "crearture",
     "creature",
     "dragon",
     "dungeon",
@@ -25,12 +26,12 @@ module Mtg::Card
     "scheme",
     "see",
     "sorcery",
-    "sticker",
+    "stickers",
     "summon",
     "token",
     "tribal",
     "vanguard",
     "wolf",
-    "you’ll",
+    "you'll",
   ]
 end

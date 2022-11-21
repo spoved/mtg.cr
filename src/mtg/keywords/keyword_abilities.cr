@@ -137,6 +137,7 @@ module Mtg::Keywords
     "plainswalk",
     "poisonous",
     "protection",
+    "prototype",
     "provoke",
     "prowess",
     "prowl",

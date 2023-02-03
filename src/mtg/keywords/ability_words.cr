@@ -10,6 +10,7 @@ module Mtg::Keywords
     "cohort",
     "constellation",
     "converge",
+    "corrupted",
     "council's dilemma",
     "coven",
     "delirium",

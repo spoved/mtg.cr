@@ -1,5 +1,6 @@
 module Mtg::Card
   PROMO_TYPES = [
+    "alchemy",
     "arenaleague",
     "boosterfun",
     "boxtopper",
@@ -7,6 +8,8 @@ module Mtg::Card
     "bringafriend",
     "bundle",
     "buyabox",
+    "commanderparty",
+    "concept",
     "convention",
     "datestamped",
     "draculaseries",
@@ -19,6 +22,7 @@ module Mtg::Card
     "gateway",
     "giftbox",
     "gilded",
+    "glossy",
     "godzillaseries",
     "instore",
     "intropack",
@@ -27,6 +31,7 @@ module Mtg::Card
     "league",
     "mediainsert",
     "neonink",
+    "oilslick",
     "openhouse",
     "planeswalkerstamped",
     "playerrewards",
@@ -34,10 +39,13 @@ module Mtg::Card
     "premiereshop",
     "prerelease",
     "promopack",
+    "rebalanced",
     "release",
     "schinesealtart",
+    "setextension",
     "setpromo",
     "stamped",
+    "stepandcompleat",
     "surgefoil",
     "textured",
     "themepack",
@@ -47,6 +55,7 @@ module Mtg::Card
   ]
 
   enum PromoTypes
+    Alchemy
     ArenaLeague
     BoosterFun
     BoxTopper
@@ -54,6 +63,8 @@ module Mtg::Card
     Bringafriend
     Bundle
     BuyABox
+    Commanderparty
+    Concept
     Convention
     DateStamped
     Draculaseries
@@ -66,6 +77,7 @@ module Mtg::Card
     Gateway
     Giftbox
     Gilded
+    Glossy
     GodzillaSeries
     InStore
     IntroPack
@@ -74,6 +86,7 @@ module Mtg::Card
     League
     MediaInsert
     Neonink
+    Oilslick
     OpenHouse
     PlaneswalkerStamped
     PlayerRewards
@@ -81,10 +94,13 @@ module Mtg::Card
     PremiereShop
     PreRelease
     PromoPack
+    Rebalanced
     Release
     Schinesealtart
+    Setextension
     SetPromo
     Stamped
+    Stepandcompleat
     Surgefoil
     Textured
     ThemePack

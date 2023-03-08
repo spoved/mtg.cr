@@ -24,7 +24,7 @@ module Mtg::Card
       when "colorless", "c"
         Colorless
       else
-        raise "Unknown color code: #{code}"
+        raise "Unknown color code: #{color}"
       end
     end
 

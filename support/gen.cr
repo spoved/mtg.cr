@@ -14,7 +14,7 @@ end
 
 def make_enum_file(path, enun, values)
   return if SKIP.includes?(enun)
-  puts enun
+  # puts enun
   file_path = File.join(SRC_PATH, path.underscore)
   file_name = File.join(file_path, "#{enun.underscore}.cr")
   FileUtils.mkdir_p(file_path)
@@ -97,9 +97,13 @@ def run
   json = File.open(File.join(CACHE_DIR, "enum_values.json")) do |file|
     JSON.parse(file)
   end
-
   json["data"].as_h.each do |key, val|
-    make_enum(key, val.as_h)
+    if val.as_h?
+      make_enum(key, val.as_h)
+    else
+      Log.warn { "cant parse #{key}" }
+      pp val
+    end
   end
 
   `crystal tool format`

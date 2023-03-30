@@ -1,6 +1,7 @@
 module Mtg::Card
   PROMO_TYPES = [
     "alchemy",
+    "ampersand",
     "arenaleague",
     "boosterfun",
     "boxtopper",
@@ -19,7 +20,6 @@ module Mtg::Card
     "fnm",
     "galaxyfoil",
     "gameday",
-    "gateway",
     "giftbox",
     "gilded",
     "glossy",
@@ -56,6 +56,7 @@ module Mtg::Card
 
   enum PromoTypes
     Alchemy
+    Ampersand
     ArenaLeague
     BoosterFun
     BoxTopper
@@ -74,7 +75,6 @@ module Mtg::Card
     FNM
     Galaxyfoil
     Gameday
-    Gateway
     Giftbox
     Gilded
     Glossy

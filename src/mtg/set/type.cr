@@ -14,6 +14,7 @@ module Mtg::Set
     "masterpiece",
     "masters",
     "memorabilia",
+    "minigame",
     "planechase",
     "premium_deck",
     "promo",
@@ -39,6 +40,7 @@ module Mtg::Set
     Masterpiece
     Masters
     Memorabilia
+    Minigame
     Planechase
     PremiumDeck
     Promo

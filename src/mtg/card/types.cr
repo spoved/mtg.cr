@@ -1,6 +1,7 @@
 module Mtg::Card
   TYPES = [
     "artifact",
+    "battle",
     "card",
     "conspiracy",
     "creature",

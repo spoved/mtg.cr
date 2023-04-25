@@ -3,6 +3,7 @@ module Mtg::Deck
     "advanced deck",
     "advanced pack",
     "archenemy deck",
+    "arena starter kit",
     "basic deck",
     "brawl deck",
     "challenger deck",

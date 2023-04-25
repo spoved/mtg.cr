@@ -13,6 +13,7 @@ module Mtg::Card
     "concept",
     "convention",
     "datestamped",
+    "doublerainbow",
     "draculaseries",
     "draftweekend",
     "duels",
@@ -24,12 +25,14 @@ module Mtg::Card
     "gilded",
     "glossy",
     "godzillaseries",
+    "halofoil",
     "instore",
     "intropack",
     "jpwalker",
     "judgegift",
     "league",
     "mediainsert",
+    "moonlitland",
     "neonink",
     "oilslick",
     "openhouse",
@@ -42,6 +45,7 @@ module Mtg::Card
     "rebalanced",
     "release",
     "schinesealtart",
+    "serialized",
     "setextension",
     "setpromo",
     "stamped",
@@ -68,6 +72,7 @@ module Mtg::Card
     Concept
     Convention
     DateStamped
+    Doublerainbow
     Draculaseries
     DraftWeekend
     Duels
@@ -79,12 +84,14 @@ module Mtg::Card
     Gilded
     Glossy
     GodzillaSeries
+    Halofoil
     InStore
     IntroPack
     JpWalker
     JudgeGift
     League
     MediaInsert
+    Moonlitland
     Neonink
     Oilslick
     OpenHouse
@@ -97,6 +104,7 @@ module Mtg::Card
     Rebalanced
     Release
     Schinesealtart
+    Serialized
     Setextension
     SetPromo
     Stamped

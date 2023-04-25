@@ -4,7 +4,6 @@ module Mtg::Card
     "aftermath",
     "art_series",
     "augment",
-    "battle",
     "class",
     "double_faced_token",
     "emblem",
@@ -29,7 +28,6 @@ module Mtg::Card
     Aftermath
     ArtSeries
     Augment
-    Battle
     Class
     DoubleFacedToken
     Emblem

@@ -1,11 +1,11 @@
 module Mtg::Card
   BOOSTER_TYPES = [
     "deck",
-    "draft",
+    "default",
   ]
 
   enum BoosterTypes
     Deck
-    Draft
+    Default
   end
 end

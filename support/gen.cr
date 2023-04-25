@@ -1,4 +1,5 @@
 require "./pull"
+require "json"
 require "file_utils"
 require "spoved/ext/string"
 
@@ -14,11 +15,12 @@ end
 
 def make_enum_file(path, enun, values)
   return if SKIP.includes?(enun)
-  # puts enun
+  return if values.empty?
+
   file_path = File.join(SRC_PATH, path.underscore)
   file_name = File.join(file_path, "#{enun.underscore}.cr")
   FileUtils.mkdir_p(file_path)
-  vs = values.map(&.as_s.klassify)
+  vs = values.map(&.as_s.klassify).reject!(&.empty?)
 
   File.open(file_name, "w") do |file|
     file.puts "module Mtg::#{path.camelcase}"
@@ -26,6 +28,7 @@ def make_enum_file(path, enun, values)
     # Log.error { "cant transform values for #{path} - #{enun}. making a list instead" }
     # Just make a list then
     make_list(enun, values, file)
+
     file.puts ""
     unless vs.find &.=~(/[^A-Za-z_]/)
       file.puts "  enum #{enun.camelcase}"
@@ -45,7 +48,7 @@ def make_enum_file(path, enun, values)
 end
 
 def make_list(enun, values, file)
-  list = values.map(&.as_s.downcase).uniq!.sort!.join(%<",\n">)
+  list = values.map(&.as_s.downcase).uniq!.sort!.reject!(&.empty?).join(%<",\n">).gsub('’', "'")
   var_name = enun.underscore.upcase
   var_name = var_name + "S" unless /S$/ === var_name
   file.puts %<#{var_name} = [\n"#{list}"\n]>
@@ -94,17 +97,23 @@ def get_aliases
 end
 
 def run
-  json = File.open(File.join(CACHE_DIR, "enum_values.json")) do |file|
-    JSON.parse(file)
-  end
+  json = JSON.parse(File.read(File.join(CACHE_DIR, "enum_values.json")))
   json["data"].as_h.each do |key, val|
+    Log.info { "making enum for #{key}" }
+
+    next if key == "category" || key == "subtype"
+
     if val.as_h?
       make_enum(key, val.as_h)
     else
-      Log.warn { "cant parse #{key}" }
-      pp val
+      Log.warn &.emit "cant parse #{key}: #{val.inspect}"
     end
   end
+
+  make_enum("product", {
+    "category" => json["data"]["category"],
+    "subtype"  => json["data"]["subtype"],
+  })
 
   `crystal tool format`
 end

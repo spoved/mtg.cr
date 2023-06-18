@@ -14,6 +14,7 @@ module Mtg::Card
     "modal_dfc",
     "normal",
     "planar",
+    "prototype",
     "reversible_card",
     "saga",
     "scheme",
@@ -38,6 +39,7 @@ module Mtg::Card
     ModalDFC
     Normal
     Planar
+    Prototype
     ReversibleCard
     Saga
     Scheme

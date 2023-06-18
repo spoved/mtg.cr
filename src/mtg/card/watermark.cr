@@ -15,6 +15,7 @@ module Mtg::Card
     "d&d",
     "dci",
     "dengekimaoh",
+    "desparked",
     "dimir",
     "dromoka",
     "flavor",

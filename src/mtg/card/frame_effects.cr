@@ -22,6 +22,7 @@ module Mtg::Card
     "snow",
     "sunmoondfc",
     "textless",
+    "thick",
     "tombstone",
     "upsidedowndfc",
     "waxingandwaningmoondfc",
@@ -50,6 +51,7 @@ module Mtg::Card
     Snow
     SunMoonDFC
     Textless
+    Thick
     Tombstone
     Upsidedowndfc
     WaxingAndWaningMoonDFC

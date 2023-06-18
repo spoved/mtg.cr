@@ -42,6 +42,7 @@ module Mtg::Keywords
     "raid",
     "rally",
     "revolt",
+    "secret council",
     "spell mastery",
     "strive",
     "sweep",

@@ -37,6 +37,7 @@ module Mtg::Card
     "oilslick",
     "openhouse",
     "planeswalkerstamped",
+    "plastic",
     "playerrewards",
     "playpromo",
     "premiereshop",
@@ -96,6 +97,7 @@ module Mtg::Card
     Oilslick
     OpenHouse
     PlaneswalkerStamped
+    Plastic
     PlayerRewards
     Playpromo
     PremiereShop

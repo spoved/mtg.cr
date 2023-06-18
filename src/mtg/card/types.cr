@@ -29,6 +29,7 @@ module Mtg::Card
     "stickers",
     "summon",
     "token",
+    "tolkien",
     "tribal",
     "universewalker",
     "vanguard",

@@ -1,16 +1,15 @@
 module Mtg::Product
   SUBTYPES = [
     "advanced",
-    "archenemy",
     "battle_pack",
     "challenge",
+    "championship",
     "clash",
     "collector",
     "deck_builders_toolkit",
     "default",
     "deluxe",
     "event",
-    "from_the_vault",
     "intro",
     "jumpstart",
     "minimal_packaging",
@@ -28,16 +27,15 @@ module Mtg::Product
 
   enum Subtype
     Advanced
-    Archenemy
     BattlePack
     Challenge
+    Championship
     Clash
     Collector
     DeckBuildersToolkit
     Default
     Deluxe
     Event
-    FromTheVault
     Intro
     Jumpstart
     MinimalPackaging

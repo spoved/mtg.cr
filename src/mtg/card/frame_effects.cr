@@ -10,8 +10,10 @@ module Mtg::Card
     "extendedart",
     "fandfc",
     "fullart",
+    "gravestone",
     "inverted",
     "legendary",
+    "legenddary",
     "lesson",
     "miracle",
     "mooneldrazidfc",
@@ -22,7 +24,6 @@ module Mtg::Card
     "snow",
     "sunmoondfc",
     "textless",
-    "thick",
     "tombstone",
     "upsidedowndfc",
     "waxingandwaningmoondfc",
@@ -39,6 +40,7 @@ module Mtg::Card
     ExtendedArt
     Fandfc
     FullArt
+    Gravestone
     Inverted
     Legendary
     Lesson
@@ -51,7 +53,6 @@ module Mtg::Card
     Snow
     SunMoonDFC
     Textless
-    Thick
     Tombstone
     Upsidedowndfc
     WaxingAndWaningMoonDFC

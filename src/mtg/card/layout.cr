@@ -12,6 +12,7 @@ module Mtg::Card
     "leveler",
     "meld",
     "modal_dfc",
+    "mutate",
     "normal",
     "planar",
     "prototype",
@@ -37,6 +38,7 @@ module Mtg::Card
     Leveler
     Meld
     ModalDFC
+    Mutate
     Normal
     Planar
     Prototype

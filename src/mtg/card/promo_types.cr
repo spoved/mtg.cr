@@ -11,6 +11,7 @@ module Mtg::Card
     "buyabox",
     "commanderparty",
     "concept",
+    "confettifoil",
     "convention",
     "datestamped",
     "doublerainbow",
@@ -50,6 +51,7 @@ module Mtg::Card
     "setextension",
     "setpromo",
     "stamped",
+    "starterdeck",
     "stepandcompleat",
     "surgefoil",
     "textured",
@@ -71,6 +73,7 @@ module Mtg::Card
     BuyABox
     Commanderparty
     Concept
+    Confettifoil
     Convention
     DateStamped
     Doublerainbow
@@ -110,6 +113,7 @@ module Mtg::Card
     Setextension
     SetPromo
     Stamped
+    Starterdeck
     Stepandcompleat
     Surgefoil
     Textured

@@ -40,6 +40,7 @@ module Mtg::Keywords
     "proliferate",
     "regenerate",
     "reveal",
+    "role token",
     "roll to visit your attractions",
     "sacrifice",
     "scry",

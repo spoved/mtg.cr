@@ -5,6 +5,7 @@ module Mtg::Keywords
     "alliance",
     "battalion",
     "bloodrush",
+    "celebration",
     "channel",
     "chroma",
     "cohort",

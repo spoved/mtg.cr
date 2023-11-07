@@ -30,10 +30,10 @@ def make_enum_file(path, enun, values)
     make_list(enun, values, file)
 
     file.puts ""
-    unless vs.find &.=~(/[^A-Za-z_]/)
+    unless vs.find &.=~(/[^A-Za-z_\-]/)
       file.puts "  enum #{enun.camelcase}"
       values.map(&.as_s).sort!.each do |val|
-        name = val.camelcase
+        name = val.gsub('-', '_').camelcase
         if ALIASES[name]?
           file.puts ALIASES[name]
         else

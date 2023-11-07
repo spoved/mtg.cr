@@ -1,33 +1,33 @@
 module Mtg::Product
   CATEGORYS = [
     "booster_box",
+    "booster_case",
     "booster_pack",
     "box_set",
     "bundle",
-    "case",
-    "commander_deck",
+    "bundle_case",
     "deck",
     "deck_box",
-    "draft_set",
-    "land_station",
-    "prerelease_pack",
+    "kit",
+    "limited_aid_case",
+    "limited_aid_tool",
+    "multiple_decks",
     "subset",
-    "two_player_starter_set",
   ]
 
   enum Category
     BoosterBox
+    BoosterCase
     BoosterPack
     BoxSet
     Bundle
-    Case
-    CommanderDeck
+    BundleCase
     Deck
     DeckBox
-    DraftSet
-    LandStation
-    PrereleasePack
+    Kit
+    LimitedAidCase
+    LimitedAidTool
+    MultipleDecks
     Subset
-    TwoPlayerStarterSet
   end
 end

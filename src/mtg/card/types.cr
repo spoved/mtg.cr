@@ -1,5 +1,6 @@
 module Mtg::Card
   TYPES = [
+    "adventure",
     "artifact",
     "battle",
     "card",
@@ -19,6 +20,7 @@ module Mtg::Card
     "jaguar",
     "knights",
     "land",
+    "legend",
     "phenomenon",
     "plane",
     "planeswalker",

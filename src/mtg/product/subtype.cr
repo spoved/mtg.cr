@@ -1,53 +1,97 @@
 module Mtg::Product
   SUBTYPES = [
     "advanced",
+    "archenemy",
     "battle_pack",
+    "brawl",
     "challenge",
+    "challenger",
     "championship",
     "clash",
     "collector",
+    "collectors_edition",
+    "commander",
+    "commander_collection",
+    "convention_exclusive",
     "deck_builders_toolkit",
     "default",
-    "deluxe",
+    "draft_set",
+    "duel",
     "event",
+    "fat_pack",
+    "from_the_vault",
+    "game_night",
+    "gift_bundle",
+    "guild_kit",
     "intro",
     "jumpstart",
-    "minimal_packaging",
+    "land_station",
+    "other",
     "planechase",
     "planeswalker",
     "premium",
+    "prerelease_kit",
+    "promotional",
+    "sealed_set",
     "secret_lair",
+    "secret_lair_bundle",
     "set",
+    "six-card",
     "spellbook",
-    "starter",
+    "starter_deck",
     "theme",
     "topper",
+    "tournament_deck",
+    "two_player_starter",
     "vip",
+    "welcome",
   ]
 
   enum Subtype
     Advanced
+    Archenemy
     BattlePack
+    Brawl
     Challenge
+    Challenger
     Championship
     Clash
     Collector
+    CollectorsEdition
+    Commander
+    CommanderCollection
+    ConventionExclusive
     DeckBuildersToolkit
     Default
-    Deluxe
+    DraftSet
+    Duel
     Event
+    FatPack
+    FromTheVault
+    GameNight
+    GiftBundle
+    GuildKit
     Intro
     Jumpstart
-    MinimalPackaging
+    LandStation
+    Other
     Planechase
     Planeswalker
     Premium
+    PrereleaseKit
+    Promotional
+    SealedSet
     SecretLair
+    SecretLairBundle
     Set
+    SixCard
     Spellbook
-    Starter
+    StarterDeck
     Theme
     Topper
+    TournamentDeck
+    TwoPlayerStarter
     Vip
+    Welcome
   end
 end

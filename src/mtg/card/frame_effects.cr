@@ -10,10 +10,8 @@ module Mtg::Card
     "extendedart",
     "fandfc",
     "fullart",
-    "gravestone",
     "inverted",
     "legendary",
-    "legenddary",
     "lesson",
     "miracle",
     "mooneldrazidfc",
@@ -26,6 +24,7 @@ module Mtg::Card
     "textless",
     "tombstone",
     "upsidedowndfc",
+    "vehicle",
     "waxingandwaningmoondfc",
   ]
 
@@ -40,7 +39,6 @@ module Mtg::Card
     ExtendedArt
     Fandfc
     FullArt
-    Gravestone
     Inverted
     Legendary
     Lesson
@@ -55,6 +53,7 @@ module Mtg::Card
     Textless
     Tombstone
     Upsidedowndfc
+    Vehicle
     WaxingAndWaningMoonDFC
   end
 end

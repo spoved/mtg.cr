@@ -1,7 +1,6 @@
 module Mtg::Card
   PROMO_TYPES = [
     "alchemy",
-    "ampersand",
     "arenaleague",
     "boosterfun",
     "boxtopper",
@@ -18,6 +17,7 @@ module Mtg::Card
     "draculaseries",
     "draftweekend",
     "duels",
+    "embossed",
     "event",
     "fnm",
     "galaxyfoil",
@@ -50,9 +50,11 @@ module Mtg::Card
     "serialized",
     "setextension",
     "setpromo",
+    "silverfoil",
     "stamped",
     "starterdeck",
     "stepandcompleat",
+    "storechampionship",
     "surgefoil",
     "textured",
     "themepack",
@@ -63,7 +65,6 @@ module Mtg::Card
 
   enum PromoTypes
     Alchemy
-    Ampersand
     ArenaLeague
     BoosterFun
     BoxTopper
@@ -80,6 +81,7 @@ module Mtg::Card
     Draculaseries
     DraftWeekend
     Duels
+    Embossed
     Event
     FNM
     Galaxyfoil
@@ -112,9 +114,11 @@ module Mtg::Card
     Serialized
     Setextension
     SetPromo
+    Silverfoil
     Stamped
     Starterdeck
     Stepandcompleat
+    Storechampionship
     Surgefoil
     Textured
     ThemePack

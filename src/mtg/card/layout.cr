@@ -4,6 +4,7 @@ module Mtg::Card
     "aftermath",
     "art_series",
     "augment",
+    "case",
     "class",
     "double_faced_token",
     "emblem",
@@ -30,6 +31,7 @@ module Mtg::Card
     Aftermath
     ArtSeries
     Augment
+    Case
     Class
     DoubleFacedToken
     Emblem

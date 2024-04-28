@@ -20,6 +20,7 @@ module Mtg::Card
     "shatteredglass",
     "showcase",
     "snow",
+    "spree",
     "sunmoondfc",
     "textless",
     "tombstone",
@@ -49,6 +50,7 @@ module Mtg::Card
     Shatteredglass
     Showcase
     Snow
+    Spree
     SunMoonDFC
     Textless
     Tombstone

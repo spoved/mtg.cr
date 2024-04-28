@@ -29,6 +29,7 @@ module Mtg::Product
     "other",
     "planechase",
     "planeswalker",
+    "play",
     "premium",
     "prerelease_kit",
     "promotional",
@@ -43,7 +44,6 @@ module Mtg::Product
     "topper",
     "tournament_deck",
     "two_player_starter",
-    "vip",
     "welcome",
   ]
 
@@ -77,6 +77,7 @@ module Mtg::Product
     Other
     Planechase
     Planeswalker
+    Play
     Premium
     PrereleaseKit
     Promotional
@@ -91,7 +92,6 @@ module Mtg::Product
     Topper
     TournamentDeck
     TwoPlayerStarter
-    Vip
     Welcome
   end
 end

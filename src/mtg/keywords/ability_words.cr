@@ -56,5 +56,6 @@ module Mtg::Keywords
     "underdog",
     "undergrowth",
     "will of the council",
+    "will of the planeswalkers",
   ]
 end

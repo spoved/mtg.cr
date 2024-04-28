@@ -13,6 +13,7 @@ module Mtg::Card
     "confettifoil",
     "convention",
     "datestamped",
+    "dossier",
     "doublerainbow",
     "draculaseries",
     "draftweekend",
@@ -29,9 +30,11 @@ module Mtg::Card
     "halofoil",
     "instore",
     "intropack",
+    "invisibleink",
     "jpwalker",
     "judgegift",
     "league",
+    "magnified",
     "mediainsert",
     "moonlitland",
     "neonink",
@@ -41,12 +44,17 @@ module Mtg::Card
     "plastic",
     "playerrewards",
     "playpromo",
+    "poster",
     "premiereshop",
     "prerelease",
     "promopack",
+    "rainbow",
+    "raisedfoil",
+    "ravnicacity",
     "rebalanced",
     "release",
     "schinesealtart",
+    "scroll",
     "serialized",
     "setextension",
     "setpromo",
@@ -60,6 +68,7 @@ module Mtg::Card
     "themepack",
     "thick",
     "tourney",
+    "vault",
     "wizardsplaynetwork",
   ]
 
@@ -77,6 +86,7 @@ module Mtg::Card
     Confettifoil
     Convention
     DateStamped
+    Dossier
     Doublerainbow
     Draculaseries
     DraftWeekend
@@ -93,9 +103,11 @@ module Mtg::Card
     Halofoil
     InStore
     IntroPack
+    Invisibleink
     JpWalker
     JudgeGift
     League
+    Magnified
     MediaInsert
     Moonlitland
     Neonink
@@ -105,12 +117,17 @@ module Mtg::Card
     Plastic
     PlayerRewards
     Playpromo
+    Poster
     PremiereShop
     PreRelease
     PromoPack
+    Rainbow
+    Raisedfoil
+    Ravnicacity
     Rebalanced
     Release
     Schinesealtart
+    Scroll
     Serialized
     Setextension
     SetPromo
@@ -124,6 +141,7 @@ module Mtg::Card
     ThemePack
     Thick
     Tourney
+    Vault
     WizardsPlayNetwork
   end
 end

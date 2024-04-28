@@ -1,6 +1,5 @@
 module Mtg::Card
   TYPES = [
-    "adventure",
     "artifact",
     "battle",
     "card",

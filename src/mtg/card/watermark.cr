@@ -38,6 +38,7 @@ module Mtg::Card
     "leagueofdastardlydoom",
     "lorehold",
     "maestros",
+    "magicfest",
     "mardu",
     "mirran",
     "mps",

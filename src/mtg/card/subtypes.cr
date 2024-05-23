@@ -120,6 +120,7 @@ module Mtg::Card
     "darillium",
     "dauthi",
     "davriel",
+    "deb",
     "deer",
     "demigod",
     "demon",

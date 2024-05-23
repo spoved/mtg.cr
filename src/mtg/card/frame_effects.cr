@@ -22,10 +22,8 @@ module Mtg::Card
     "snow",
     "spree",
     "sunmoondfc",
-    "textless",
     "tombstone",
     "upsidedowndfc",
-    "vehicle",
     "waxingandwaningmoondfc",
   ]
 
@@ -52,10 +50,8 @@ module Mtg::Card
     Snow
     Spree
     SunMoonDFC
-    Textless
     Tombstone
     Upsidedowndfc
-    Vehicle
     WaxingAndWaningMoonDFC
   end
 end

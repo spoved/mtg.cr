@@ -48,7 +48,7 @@ module Mtg::Card
     "premiereshop",
     "prerelease",
     "promopack",
-    "rainbow",
+    "rainbowfoil",
     "raisedfoil",
     "ravnicacity",
     "rebalanced",
@@ -121,7 +121,7 @@ module Mtg::Card
     PremiereShop
     PreRelease
     PromoPack
-    Rainbow
+    Rainbowfoil
     Raisedfoil
     Ravnicacity
     Rebalanced

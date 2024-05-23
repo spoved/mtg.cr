@@ -28,6 +28,7 @@ module Mtg::Deck
     "planeswalker deck",
     "premium deck",
     "pro tour deck",
+    "sample deck",
     "san diego comic con promos",
     "secret lair drop",
     "shandalar enemy deck",

@@ -15,6 +15,7 @@ module Mtg::Product
     "convention_exclusive",
     "deck_builders_toolkit",
     "default",
+    "draft",
     "draft_set",
     "duel",
     "event",
@@ -63,6 +64,7 @@ module Mtg::Product
     ConventionExclusive
     DeckBuildersToolkit
     Default
+    Draft
     DraftSet
     Duel
     Event

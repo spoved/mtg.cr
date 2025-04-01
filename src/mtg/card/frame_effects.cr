@@ -6,6 +6,7 @@ module Mtg::Card
     "convertdfc",
     "devoid",
     "draft",
+    "enchantment",
     "etched",
     "extendedart",
     "fandfc",
@@ -15,7 +16,6 @@ module Mtg::Card
     "lesson",
     "miracle",
     "mooneldrazidfc",
-    "nyxtouched",
     "originpwdfc",
     "shatteredglass",
     "showcase",
@@ -34,6 +34,7 @@ module Mtg::Card
     Convertdfc
     Devoid
     Draft
+    Enchantment
     Etched
     ExtendedArt
     Fandfc
@@ -43,7 +44,6 @@ module Mtg::Card
     Lesson
     Miracle
     MoonEldraziDFC
-    NyxTouched
     OriginPwDFC
     Shatteredglass
     Showcase

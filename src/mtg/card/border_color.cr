@@ -5,6 +5,7 @@ module Mtg::Card
     "gold",
     "silver",
     "white",
+    "yellow",
   ]
 
   enum BorderColor
@@ -13,5 +14,6 @@ module Mtg::Card
     Gold
     Silver
     White
+    Yellow
   end
 end

@@ -2,6 +2,7 @@ module Mtg::Card
   PROMO_TYPES = [
     "alchemy",
     "arenaleague",
+    "beginnerbox",
     "boosterfun",
     "boxtopper",
     "brawldeck",
@@ -14,13 +15,17 @@ module Mtg::Card
     "convention",
     "datestamped",
     "dossier",
+    "doubleexposure",
     "doublerainbow",
     "draculaseries",
     "draftweekend",
+    "dragonscalefoil",
     "duels",
     "embossed",
     "event",
+    "firstplacefoil",
     "fnm",
+    "fracturefoil",
     "galaxyfoil",
     "gameday",
     "giftbox",
@@ -28,6 +33,7 @@ module Mtg::Card
     "glossy",
     "godzillaseries",
     "halofoil",
+    "imagine",
     "instore",
     "intropack",
     "invisibleink",
@@ -35,6 +41,7 @@ module Mtg::Card
     "judgegift",
     "league",
     "magnified",
+    "manafoil",
     "mediainsert",
     "moonlitland",
     "neonink",
@@ -44,6 +51,8 @@ module Mtg::Card
     "plastic",
     "playerrewards",
     "playpromo",
+    "playtest",
+    "portrait",
     "poster",
     "premiereshop",
     "prerelease",
@@ -53,13 +62,17 @@ module Mtg::Card
     "ravnicacity",
     "rebalanced",
     "release",
+    "resale",
+    "ripplefoil",
     "schinesealtart",
     "scroll",
     "serialized",
     "setextension",
     "setpromo",
     "silverfoil",
+    "sldbonus",
     "stamped",
+    "startercollection",
     "starterdeck",
     "stepandcompleat",
     "storechampionship",
@@ -68,6 +81,8 @@ module Mtg::Card
     "themepack",
     "thick",
     "tourney",
+    "upsidedown",
+    "upsidedownback",
     "vault",
     "wizardsplaynetwork",
   ]
@@ -75,6 +90,7 @@ module Mtg::Card
   enum PromoTypes
     Alchemy
     ArenaLeague
+    Beginnerbox
     BoosterFun
     BoxTopper
     BrawlDeck
@@ -87,13 +103,17 @@ module Mtg::Card
     Convention
     DateStamped
     Dossier
+    Doubleexposure
     Doublerainbow
     Draculaseries
     DraftWeekend
+    Dragonscalefoil
     Duels
     Embossed
     Event
+    Firstplacefoil
     FNM
+    Fracturefoil
     Galaxyfoil
     Gameday
     Giftbox
@@ -101,6 +121,7 @@ module Mtg::Card
     Glossy
     GodzillaSeries
     Halofoil
+    Imagine
     InStore
     IntroPack
     Invisibleink
@@ -108,6 +129,7 @@ module Mtg::Card
     JudgeGift
     League
     Magnified
+    Manafoil
     MediaInsert
     Moonlitland
     Neonink
@@ -117,6 +139,8 @@ module Mtg::Card
     Plastic
     PlayerRewards
     Playpromo
+    Playtest
+    Portrait
     Poster
     PremiereShop
     PreRelease
@@ -126,13 +150,17 @@ module Mtg::Card
     Ravnicacity
     Rebalanced
     Release
+    Resale
+    Ripplefoil
     Schinesealtart
     Scroll
     Serialized
     Setextension
     SetPromo
     Silverfoil
+    Sldbonus
     Stamped
+    Startercollection
     Starterdeck
     Stepandcompleat
     Storechampionship
@@ -141,6 +169,8 @@ module Mtg::Card
     ThemePack
     Thick
     Tourney
+    Upsidedown
+    Upsidedownback
     Vault
     WizardsPlayNetwork
   end

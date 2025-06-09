@@ -10,6 +10,7 @@ module Mtg::Card
     "bundle",
     "buyabox",
     "commanderparty",
+    "commanderpromo",
     "concept",
     "confettifoil",
     "convention",
@@ -23,6 +24,22 @@ module Mtg::Card
     "duels",
     "embossed",
     "event",
+    "ffi",
+    "ffii",
+    "ffiii",
+    "ffiv",
+    "ffix",
+    "ffv",
+    "ffvi",
+    "ffvii",
+    "ffviii",
+    "ffx",
+    "ffxi",
+    "ffxii",
+    "ffxiii",
+    "ffxiv",
+    "ffxv",
+    "ffxvi",
     "firstplacefoil",
     "fnm",
     "fracturefoil",
@@ -98,6 +115,7 @@ module Mtg::Card
     Bundle
     BuyABox
     Commanderparty
+    Commanderpromo
     Concept
     Confettifoil
     Convention
@@ -111,6 +129,22 @@ module Mtg::Card
     Duels
     Embossed
     Event
+    Ffi
+    Ffii
+    Ffiii
+    Ffiv
+    Ffix
+    Ffv
+    Ffvi
+    Ffvii
+    Ffviii
+    Ffx
+    Ffxi
+    Ffxii
+    Ffxiii
+    Ffxiv
+    Ffxv
+    Ffxvi
     Firstplacefoil
     FNM
     Fracturefoil

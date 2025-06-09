@@ -23,6 +23,7 @@ module Mtg::Keywords
     "fateful hour",
     "fathomless descent",
     "ferocious",
+    "flurry",
     "formidable",
     "grandeur",
     "hellbent",

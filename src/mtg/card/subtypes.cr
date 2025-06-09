@@ -418,6 +418,7 @@ module Mtg::Card
     "processor",
     "proper",
     "pyrulea",
+    "qu",
     "quest",
     "quintorius",
     "rabbit",

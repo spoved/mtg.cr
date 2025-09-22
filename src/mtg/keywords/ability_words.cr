@@ -47,6 +47,7 @@ module Mtg::Keywords
     "radiance",
     "raid",
     "rally",
+    "renew",
     "revolt",
     "secret council",
     "spell mastery",
@@ -60,6 +61,7 @@ module Mtg::Keywords
     "underdog",
     "undergrowth",
     "valiant",
+    "void",
     "will of the council",
     "will of the planeswalkers",
   ]

@@ -1,6 +1,6 @@
 module Mtg::Card
   FRAME_EFFECTS = [
-    "borderless",
+    "boosterfun",
     "colorshifted",
     "companion",
     "compasslanddfc",
@@ -18,7 +18,6 @@ module Mtg::Card
     "miracle",
     "mooneldrazidfc",
     "originpwdfc",
-    "placeholderimage",
     "shatteredglass",
     "showcase",
     "snow",
@@ -30,7 +29,7 @@ module Mtg::Card
   ]
 
   enum FrameEffects
-    Borderless
+    BoosterFun
     ColorShifted
     Companion
     CompassLandDFC
@@ -48,7 +47,6 @@ module Mtg::Card
     Miracle
     MoonEldraziDFC
     OriginPwDFC
-    Placeholderimage
     Shatteredglass
     Showcase
     Snow

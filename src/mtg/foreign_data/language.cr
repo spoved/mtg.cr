@@ -17,6 +17,7 @@ module Mtg::ForeignData
     Arabic
     Sanskrit
     Phyrexian
+    Quenya
 
     def self.from_s(value : String) : Language
       self.new(value)
@@ -62,6 +63,8 @@ module Mtg::ForeignData
         Sanskrit
       when "ph", /Phyrexian/i
         Phyrexian
+      when "qya", /Quenya/i
+        Quenya
       else
         raise "Unknown language code: #{lang}"
       end

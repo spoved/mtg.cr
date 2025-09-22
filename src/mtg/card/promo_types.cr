@@ -14,6 +14,7 @@ module Mtg::Card
     "concept",
     "confettifoil",
     "convention",
+    "cosmicfoil",
     "datestamped",
     "dossier",
     "doubleexposure",
@@ -50,6 +51,7 @@ module Mtg::Card
     "glossy",
     "godzillaseries",
     "halofoil",
+    "headliner",
     "imagine",
     "instore",
     "intropack",
@@ -60,6 +62,7 @@ module Mtg::Card
     "magnified",
     "manafoil",
     "mediainsert",
+    "metal",
     "moonlitland",
     "neonink",
     "oilslick",
@@ -87,6 +90,7 @@ module Mtg::Card
     "setextension",
     "setpromo",
     "silverfoil",
+    "singularityfoil",
     "sldbonus",
     "stamped",
     "startercollection",
@@ -119,6 +123,7 @@ module Mtg::Card
     Concept
     Confettifoil
     Convention
+    Cosmicfoil
     DateStamped
     Dossier
     Doubleexposure
@@ -155,6 +160,7 @@ module Mtg::Card
     Glossy
     GodzillaSeries
     Halofoil
+    Headliner
     Imagine
     InStore
     IntroPack
@@ -165,6 +171,7 @@ module Mtg::Card
     Magnified
     Manafoil
     MediaInsert
+    Metal
     Moonlitland
     Neonink
     Oilslick
@@ -192,6 +199,7 @@ module Mtg::Card
     Setextension
     SetPromo
     Silverfoil
+    Singularityfoil
     Sldbonus
     Stamped
     Startercollection

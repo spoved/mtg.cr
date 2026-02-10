@@ -1,4 +1,4 @@
-module Mtg::SealedProduct
+module Mtg::Product
   CATEGORYS = [
     "booster_box",
     "booster_case",

@@ -101,7 +101,7 @@ def run
   json["data"].as_h.each do |key, val|
     Log.info { "making enum for #{key}" }
 
-    next if key == "category" || key == "subtype"
+    next if key == "category" || key == "subtype" || key == "sealedProduct"
 
     if val.as_h?
       make_enum(key, val.as_h)
@@ -110,10 +110,10 @@ def run
     end
   end
 
-  # make_enum("product", {
-  #   "category" => json["data"]["sealedProduct"]["category"],
-  #   "subtype"  => json["data"]["sealedProduct"]["subtype"],
-  # })
+  make_enum("product", {
+    "category" => json["data"]["sealedProduct"]["category"],
+    "subtype"  => json["data"]["sealedProduct"]["subtype"],
+  })
 
   `crystal tool format`
 end

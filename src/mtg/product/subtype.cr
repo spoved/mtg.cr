@@ -1,4 +1,4 @@
-module Mtg::SealedProduct
+module Mtg::Product
   SUBTYPES = [
     "advanced",
     "archenemy",

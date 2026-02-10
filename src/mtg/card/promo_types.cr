@@ -9,6 +9,7 @@ module Mtg::Card
     "bringafriend",
     "bundle",
     "buyabox",
+    "chocobotrackfoil",
     "commanderparty",
     "commanderpromo",
     "concept",
@@ -56,6 +57,7 @@ module Mtg::Card
     "instore",
     "intropack",
     "invisibleink",
+    "japanshowcase",
     "jpwalker",
     "judgegift",
     "league",
@@ -65,6 +67,15 @@ module Mtg::Card
     "metal",
     "moonlitland",
     "neonink",
+    "neoninkblue",
+    "neoninkgreen",
+    "neoninkmulticolor",
+    "neoninkpink",
+    "neoninkpurple",
+    "neoninkrainbow",
+    "neoninkred",
+    "neoninkthreecolor",
+    "neoninkyellow",
     "oilslick",
     "openhouse",
     "planeswalkerstamped",
@@ -92,6 +103,7 @@ module Mtg::Card
     "silverfoil",
     "singularityfoil",
     "sldbonus",
+    "sourcematerial",
     "stamped",
     "startercollection",
     "starterdeck",
@@ -102,6 +114,7 @@ module Mtg::Card
     "themepack",
     "thick",
     "tourney",
+    "universesbeyond",
     "upsidedown",
     "upsidedownback",
     "vault",
@@ -118,6 +131,7 @@ module Mtg::Card
     Bringafriend
     Bundle
     BuyABox
+    Chocobotrackfoil
     Commanderparty
     Commanderpromo
     Concept
@@ -165,6 +179,7 @@ module Mtg::Card
     InStore
     IntroPack
     Invisibleink
+    Japanshowcase
     JpWalker
     JudgeGift
     League
@@ -174,6 +189,15 @@ module Mtg::Card
     Metal
     Moonlitland
     Neonink
+    Neoninkblue
+    Neoninkgreen
+    Neoninkmulticolor
+    Neoninkpink
+    Neoninkpurple
+    Neoninkrainbow
+    Neoninkred
+    Neoninkthreecolor
+    Neoninkyellow
     Oilslick
     OpenHouse
     PlaneswalkerStamped
@@ -201,6 +225,7 @@ module Mtg::Card
     Silverfoil
     Singularityfoil
     Sldbonus
+    Sourcematerial
     Stamped
     Startercollection
     Starterdeck
@@ -211,6 +236,7 @@ module Mtg::Card
     ThemePack
     Thick
     Tourney
+    Universesbeyond
     Upsidedown
     Upsidedownback
     Vault

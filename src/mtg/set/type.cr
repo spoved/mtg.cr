@@ -8,6 +8,7 @@ module Mtg::Set
     "core",
     "draft_innovation",
     "duel_deck",
+    "eternal",
     "expansion",
     "from_the_vault",
     "funny",
@@ -34,6 +35,7 @@ module Mtg::Set
     Core
     DraftInnovation
     DuelDeck
+    Eternal
     Expansion
     FromTheVault
     Funny

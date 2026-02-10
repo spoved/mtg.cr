@@ -14,6 +14,7 @@ module Mtg::Set
     "latin",
     "phyrexian",
     "portuguese (brazil)",
+    "quenya",
     "russian",
     "sanskrit",
     "spanish",

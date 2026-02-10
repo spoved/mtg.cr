@@ -2,6 +2,7 @@ module Mtg::Card
   TYPES = [
     "artifact",
     "battle",
+    "boss",
     "card",
     "conspiracy",
     "creature",

@@ -3,10 +3,12 @@ module Mtg::Keywords
     "abandon",
     "activate",
     "adapt",
+    "airbend",
     "amass",
     "assemble",
     "attach",
     "behold",
+    "blight",
     "bolster",
     "cast",
     "clash",
@@ -22,6 +24,7 @@ module Mtg::Keywords
     "discard",
     "discover",
     "double",
+    "earthbend",
     "endure",
     "exchange",
     "exert",
@@ -66,5 +69,6 @@ module Mtg::Keywords
     "untap",
     "venture into the dungeon",
     "vote",
+    "waterbend",
   ]
 end

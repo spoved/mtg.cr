@@ -110,10 +110,10 @@ def run
     end
   end
 
-  make_enum("product", {
-    "category" => json["data"]["category"],
-    "subtype"  => json["data"]["subtype"],
-  })
+  # make_enum("product", {
+  #   "category" => json["data"]["sealedProduct"]["category"],
+  #   "subtype"  => json["data"]["sealedProduct"]["subtype"],
+  # })
 
   `crystal tool format`
 end

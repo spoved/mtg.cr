@@ -1,6 +1,5 @@
 module Mtg::Card
   FRAME_EFFECTS = [
-    "boosterfun",
     "colorshifted",
     "companion",
     "compasslanddfc",
@@ -29,7 +28,6 @@ module Mtg::Card
   ]
 
   enum FrameEffects
-    BoosterFun
     ColorShifted
     Companion
     CompassLandDFC

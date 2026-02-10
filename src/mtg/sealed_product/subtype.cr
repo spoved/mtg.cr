@@ -1,4 +1,4 @@
-module Mtg::Product
+module Mtg::SealedProduct
   SUBTYPES = [
     "advanced",
     "archenemy",
@@ -45,6 +45,7 @@ module Mtg::Product
     "topper",
     "tournament_deck",
     "two_player_starter",
+    "unknown",
     "welcome",
   ]
 
@@ -94,6 +95,7 @@ module Mtg::Product
     Topper
     TournamentDeck
     TwoPlayerStarter
+    Unknown
     Welcome
   end
 end

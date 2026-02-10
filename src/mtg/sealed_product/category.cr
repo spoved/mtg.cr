@@ -1,4 +1,4 @@
-module Mtg::Product
+module Mtg::SealedProduct
   CATEGORYS = [
     "booster_box",
     "booster_case",
@@ -13,6 +13,7 @@ module Mtg::Product
     "limited_aid_tool",
     "multiple_decks",
     "subset",
+    "unknown",
   ]
 
   enum Category
@@ -29,5 +30,6 @@ module Mtg::Product
     LimitedAidTool
     MultipleDecks
     Subset
+    Unknown
   end
 end
